@@ -1,0 +1,161 @@
+.iwqc-content {
+    color : black;
+}
+
+body {
+    font: 12pt "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+    letter-spacing: normal;
+}
+
+.iwqc-content H1 {
+font: 48pt/85% "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+font-weight: bold;
+letter-spacing: -0.03em;
+text-align: left;
+margin-bottom: 0;
+	margin-top: 0;
+}
+
+.iwqc-content .red {
+    color : #880000;
+}
+
+.highlight {
+    background-color : #FFFFAA;
+}
+
+
+.iwqc-content H2 {
+	 font: 24pt "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+	 font-weight:  bold;
+	 letter-spacing: -0.03em;
+	 margin-bottom: 0;
+	 margin-top: 0;
+}
+
+.iwqc-content H3 {
+	 font: 18pt "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+	 letter-spacing: normal;
+}
+
+.iwqc-content H4 {
+	 font: 14pt "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
+	 letter-spacing: normal;
+   color : #111111;   
+}
+
+.iwqc-content P {
+	width: 80%;
+}
+
+.iwqc-content .paper {
+	margin-top: 15px;
+}
+
+.iwqc-content .poster {
+	margin-top: 15px;
+}
+
+.iwqc-content .authors {
+	font-weight: bold;
+}
+
+.iwqc-content .authors A {
+	font-weight: bold;
+}
+
+.iwqc-content .title {
+	font-style: italic;
+}
+
+.iwqc-content .abstract {
+	margin-bottom: 10px;
+	font-size: 10pt;
+	line-height: 150%;
+}
+
+TABLE#dates {
+	width: 80%;
+	border: 1pt solid gray;
+}
+
+TR:nth-child(even) {
+	background-color: #F4F4F4;
+}
+
+
+TD {
+	width: 50%;
+	margin: 0;
+}
+
+TD.schedule-time {
+	width: 5em;
+	color: gray;
+	text-align: center;
+}
+
+TD.schedule-talk {
+	width: 800px;
+	padding: 2px;
+	line-height: 135%;
+    height: 100px;
+}
+
+TD.schedule-break {
+	width: auto;
+	color: gray;
+	background-color: #fefec4;
+	margin: 0.5pt;
+}
+
+.iwqc-content TR.big-header-row TH {
+	background-color: #000000;
+	color: #ffffff;
+	font-weight: bold;
+	letter-spacing: -0.05em;
+	font-size: 16pt;
+}
+
+.iwqc-content TD.invited-talk {
+	background-color: #ffff77;
+}
+
+.iwqc-content TD.posters {
+	background-color: #aaddff;
+}
+
+.iwqc-content .affiliation {
+	font-size: small;
+}
+.tokyo-time, .uk-time, .nyc-time, .la-time {
+	text-align: center;
+	padding: 3px;
+	margin: 0;
+	width: 5.7em;
+	min-width: 5.7em;
+}
+
+A .back-link {
+	font-size: 10pt;
+	line-height: 150%;
+}
+
+.small-grey {
+	font-size: 8pt;
+	line-height: 90%;
+	color: #434343;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.warning {
+	background-color: #FFAAAA;
+	padding: 25px;
+}

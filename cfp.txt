@@ -1,0 +1,42 @@
+Cfp: International Workshop on Quantum Compilation -- 11-12 September 2024
+
+Call for Papers
+6th International Workshop on Quantum Compilation
+11-12 September 2024, Berlin, Germany 
+https://quantum-compilers.github.io/iwqc2024/
+
+We invite contributions to the 6th International Workshop on Quantum Compilation, which will take place at Frauhofer FOKUS in Berlin, on the 11th and 12th of September 2024.
+
+The workshop aims to bring together researchers from quantum computing, electronic design automation, and compiler construction. Open questions that we anticipate this group to tackle include new methods for circuit synthesis, optimization, and rewriting, techniques for verifying the correctness of quantum programs, and new techniques for compiling efficient circuits and protocols regarding fault-tolerant and architecture constraints.
+
+The main purpose of the workshop is to exchange recent ideas and research in the area of quantum compilation. The workshop has no formal proceedings. Authors are invited to submit an abstract or a paper, with no restrictions on the format. Submission of tool and case-study papers are highly encouraged. In case of a positive evaluation, submissions are accepted either as oral or poster presentation to be part of the workshop program. All abstracts and papers are distributed only among the participants, but can be shared on the workshop's website with the author's consent.
+
+Topics of interest for the workshop include : 
+* Depth- and space-optimizing compilers for quantum circuits
+* Quantum and reversible circuit peep-holing and (re)synthesis
+* Reversible logic synthesis
+* Technology-aware mapping
+* Fault-tolerant circuit compilation
+* Quantum programming languages
+* Intermediate representations for quantum software
+* Optimized libraries (e.g., for arithmetic and Hamiltonian simulation)
+* Benchmarking of circuits for small and medium scale quantum computers
+* Design-space exploration for automatic code generation from classical HDL specification
+* Software and tools for all above mentioned topics
+* Quantum outreach: coding contests, tutorials, education
+
+Accepted submissions should be presented in person in Berlin — please note the workshop dates! Submissions must point out who will present the contribution if it is selected.
+
+Submission is via EasyChair. Please submit your contribution here:
+https://easychair.org/conferences/?conf=iwqc2024
+
+Programme Committee
+---
+Ross Duncan, Quantinuum, ross.duncan@quantinuum.com
+Thomas Häner, Amazon Web Services, thaener@amazon.com
+Ali Javadi-Abhari, IBM Quantum, ali.javadi@ibm.com
+Aleks Kissinger, University of Oxford, Aleks.kissinger@cs.ox.ac.uk
+Neil J. Ross, Dalhousie University, Neil.JR.Ross@Dal.Ca
+Raphael Seidel, Fraunhofer FOKUS, raphael.seidel@fokus.fraunhofer.de
+Mathias Soeken, Microsoft and EPFL, mathias.soeken@epfl.ch
+Benoit Valiron, Université Paris Saclay, benoit.valiron@universite-paris-saclay.fr
