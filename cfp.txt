@@ -25,7 +25,7 @@ Topics of interest for the workshop include :
 * Software and tools for all above mentioned topics
 * Quantum outreach: coding contests, tutorials, education
 
-Accepted submissions should be presented in person in Berlin — please note the workshop dates! Submissions must point out who will present the contribution if it is selected.
+Accepted submissions should be presented in person in Helsinki — please note the workshop dates! Submissions must point out who will present the contribution if it is selected.
 
 Submission is via EasyChair. Please submit your contribution here:
 https://easychair.org/conferences/?conf=iwqc25
