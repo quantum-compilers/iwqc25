@@ -9,6 +9,9 @@ body {
 
 pre {
     white-space: pre-wrap;
+	background-color: #eff0f1;
+	display: inline-block;
+	font-size: 14px;
 }
 
 .iwqc-content H1 {
