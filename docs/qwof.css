@@ -7,6 +7,10 @@ body {
     letter-spacing: normal;
 }
 
+pre {
+    white-space: pre-wrap;
+}
+
 .iwqc-content H1 {
 font: 48pt/85% "Helvetica Neue", Helvetica, Geneva, Arial, sans-serif;
 font-weight: bold;
