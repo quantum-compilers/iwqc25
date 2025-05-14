@@ -3,7 +3,7 @@ Cfp: International Workshop on Quantum Compilation -- 6-7 September 2025
 Call for Papers
 7th International Workshop on Quantum Compilation
 6-7 September 2025, Helsinki, Finland 
-https://quantum-compilers.github.io/iwqc2025/
+https://quantum-compilers.github.io/iwqc25/
 
 We invite contributions to the 7th International Workshop on Quantum Compilation, which will take place at Aalto University in Helsinki, on the 6th and 7th of September 2025.
 
