@@ -29,7 +29,7 @@ The main purpose of the workshop is to exchange recent ideas and research in the
 * Software and tools for all above mentioned topics
 * Quantum outreach: coding contests, tutorials, education
 
-The workshop has no formal proceedings. Authors are invited to submit an abstract or a paper, with no restrictions on the format. However please use your common sense : the referees need to be able to assess the submission, so you need to describe the work in enough detail to allow this.  Submission of tool and case-study papers are highly encouraged. In case of a positive evaluation, submissions are accepted either as oral or poster presentation to be part of the workshop program. All abstracts and papers are distributed only among the participants, but can be shared on the workshop's website with the author's consent.
+The workshop has no formal proceedings. Authors are invited to submit an abstract of 3--5 pages in length. Submission of tool and case-study papers are highly encouraged.  Links to longer documents or source code respositories are permitted, although the referees may or may not refer to them.  In case of a positive evaluation, submissions are accepted either as oral or poster presentation to be part of the workshop program. All abstracts and papers are distributed only among the participants, but can be shared on the workshop's website with the author's consent.
 
 Accepted submissions should be presented in person in Helsinki — please note the workshop dates! Submissions must point out who will present the contribution if it is selected.
 
