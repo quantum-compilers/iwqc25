@@ -7,23 +7,29 @@ https://quantum-compilers.github.io/iwqc25/
 
 We invite contributions to the 7th International Workshop on Quantum Compilation, which will take place at Aalto University in Helsinki, on the 6th and 7th of September 2025.
 
+Submission of abstracts : 13 July 2025 (anywhere-on-earth)
+Notification of decisions : 27 July 2025
+Registration deadline : 31 August 2025
+Workshop : 6 and 7 September 2025
+
 The workshop aims to bring together researchers from quantum computing, electronic design automation, and compiler construction. Open questions that we anticipate this group to tackle include new methods for circuit synthesis, optimization, and rewriting, techniques for verifying the correctness of quantum programs, and new techniques for compiling efficient circuits and protocols regarding fault-tolerant and architecture constraints.
 
-The main purpose of the workshop is to exchange recent ideas and research in the area of quantum compilation. The workshop has no formal proceedings. Authors are invited to submit an abstract or a paper, with no restrictions on the format. Submission of tool and case-study papers are highly encouraged. In case of a positive evaluation, submissions are accepted either as oral or poster presentation to be part of the workshop program. All abstracts and papers are distributed only among the participants, but can be shared on the workshop's website with the author's consent.
+The main purpose of the workshop is to exchange recent ideas and research in the area of quantum compilation.  Topics of interest for the workshop include:
 
-Topics of interest for the workshop include : 
-* Depth- and space-optimizing compilers for quantum circuits
+* Optimizing compilers for quantum software
 * Quantum and reversible circuit peep-holing and (re)synthesis
 * Reversible logic synthesis
 * Technology-aware mapping
 * Fault-tolerant circuit compilation
-* Quantum programming languages
 * Intermediate representations for quantum software
+* Quantum programming languages
+* Design-space exploration for automatic code generation from classical HDL specification
 * Optimized libraries (e.g., for arithmetic and Hamiltonian simulation)
 * Benchmarking of circuits for small and medium scale quantum computers
-* Design-space exploration for automatic code generation from classical HDL specification
 * Software and tools for all above mentioned topics
 * Quantum outreach: coding contests, tutorials, education
+
+The workshop has no formal proceedings. Authors are invited to submit an abstract or a paper, with no restrictions on the format. However please use your common sense : the referees need to be able to assess the submission, so you need to describe the work in enough detail to allow this.  Submission of tool and case-study papers are highly encouraged. In case of a positive evaluation, submissions are accepted either as oral or poster presentation to be part of the workshop program. All abstracts and papers are distributed only among the participants, but can be shared on the workshop's website with the author's consent.
 
 Accepted submissions should be presented in person in Helsinki — please note the workshop dates! Submissions must point out who will present the contribution if it is selected.
 
@@ -40,3 +46,8 @@ Neil J. Ross, Dalhousie University, Neil.JR.Ross@Dal.Ca
 Raphael Seidel, Fraunhofer FOKUS, raphael.seidel@fokus.fraunhofer.de
 Mathias Soeken, Microsoft and EPFL, mathias.soeken@epfl.ch
 Benoit Valiron, Université Paris Saclay, benoit.valiron@universite-paris-saclay.fr
+
+Organising Committee
+---
+* Alexandru Paler, Aalto University.
+* Arianne Meijer-van de Griend, Aalto University.
