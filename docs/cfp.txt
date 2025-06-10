@@ -38,16 +38,13 @@ https://easychair.org/conferences/?conf=iwqc25
 
 Programme Committee
 ---
-Ross Duncan, Quantinuum, ross.duncan@quantinuum.com
-Thomas Häner, Amazon Web Services, thaener@amazon.com
-Ali Javadi-Abhari, IBM Quantum, ali.javadi@ibm.com
-Aleks Kissinger, University of Oxford, Aleks.kissinger@cs.ox.ac.uk
-Neil J. Ross, Dalhousie University, Neil.JR.Ross@Dal.Ca
+Ross Duncan, Quantinuum.
+Thomas Häner, Amazon Web Services.
+Ali Javadi-Abhari, IBM Quantum.
+Aleks Kissinger, University of Oxford.
+Arianne Meijer-van de Griend, University of Helsinki.
+Alexandru Paler, Aalto University.
+Neil J. Ross, Dalhousie University.
 Raphael Seidel, Fraunhofer FOKUS, raphael.seidel@fokus.fraunhofer.de
-Mathias Soeken, Microsoft and EPFL, mathias.soeken@epfl.ch
-Benoit Valiron, Université Paris Saclay, benoit.valiron@universite-paris-saclay.fr
-
-Organising Committee
----
-* Alexandru Paler, Aalto University.
-* Arianne Meijer-van de Griend, Aalto University.
+Mathias Soeken, Microsoft and EPFL.
+Benoit Valiron, Université Paris Saclay.
