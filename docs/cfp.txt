@@ -45,6 +45,6 @@ Aleks Kissinger, University of Oxford.
 Arianne Meijer-van de Griend, University of Helsinki.
 Alexandru Paler, Aalto University.
 Neil J. Ross, Dalhousie University.
-Raphael Seidel, Fraunhofer FOKUS, raphael.seidel@fokus.fraunhofer.de
+Raphael Seidel, Fraunhofer FOKUS.
 Mathias Soeken, Microsoft and EPFL.
 Benoit Valiron, Université Paris Saclay.
