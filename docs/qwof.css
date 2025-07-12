@@ -83,6 +83,23 @@ margin-bottom: 0;
 	line-height: 150%;
 }
 
+.iwqc-content .invited-speaker .speaker-name {
+    font-size: large;
+    font-weight: bold;    
+}
+
+.iwqc-content .speaker-photo {
+    float: left;
+    margin-right: 10px;
+}
+
+.iwqc-content .invited-talk .talk-title {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
 TABLE#dates {
 	width: 80%;
 	border: 1pt solid gray;
