@@ -88,6 +88,10 @@ margin-bottom: 0;
     font-weight: bold;    
 }
 
+.iwqc-content .invited-speaker .talk-title {
+    font-style: italic;
+}
+
 .iwqc-content .speaker-photo {
     float: left;
     margin-right: 10px;
