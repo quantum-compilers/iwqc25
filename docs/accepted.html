@@ -1,23 +1,24 @@
 <head>
-  <title>6th International Workshop on Quantum Compilation</title>
-  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <title>7th International Workshop on Quantum Compilation</title>
   <link rel="stylesheet" href="qwof.css" type='text/css' media='all'  />
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <div class="iwqc-content">
 
-<H1>6th International Workshop on</H1>
+<H1>7th International Workshop on</H1>
 <H1 class="red">Quantum Compilation</H1>
 
-<H2>11-12 September 2024</H2>
-<H2>Berlin, Germany</H2>
+<H2>6-7 September 2025</H2>
+<H2>Helsinki, Finland</H2>
 
     <p>&nbsp;</p>
 
 <H3>Invited Speakers</H3>
 <ul>
-  <li><a href="https://developer.nvidia.com/blog/author/bheim/">Bettina Heim</a></li>
-  <li><a href="https://www.cda.cit.tum.de/team/wille/">Robert Wille</a></li>
+  <li><a href="invited1.html">Olivia Di Matteo</a></li>
+  <li><a href="invited2.html">Adam Glos</a></li>
 </ul>
 
 <H3>Accepted Contributions</H3>
@@ -32,378 +33,609 @@
 -->
 <!-- record starts -->
 <div class="article">
-  <a link="IWQC_paper_11">
+  <a link="IWQC_paper_2">
   <span class="authors">
-    Aaron Miller
+    Yannick Stade, Wan-Hsuan Lin, Jason Cong and Robert Wille
   </span><br/>
   <span class="title">
-    Treespilation and the Bonsai Algorithm: Grow Your own Fermion-to-Qubit Mappings
+    Routing-Aware Placement for Zoned Neutral Atom Quantum
+Computers
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    Quantum computers hold great promise for efficiently simulating Fermionic systems, benefiting fields like quantum chemistry and materials science. To achieve this, algorithms typically begin by choosing a Fermion-to-qubit mapping to encode the Fermionic problem in the qubits of a quantum computer The mapping transforms a local problem in Fermionic space into a non-local one in qubit space. This is a problem that in quantum chemistry is compounded by intricate electronic interactions, resulting in deep circuits, particularly on current quantum computers with limited qubit connectivity. 
-<br/>
-In our recent work [1,2], we propose an algorithm for designing flexible fermion-to-qubit mappings using ternary trees. We explore the relationship between the structure of these trees and key properties of the resulting mapping, such as Pauli weight and mode occupation delocalization. We demonstrate how well-known mappings like Jordan-Wigner [3], Parity [4], Bravyi-Kitaev [5], and ternary-tree mappings [6,7] are easily understood in this formalism and introduce the Bonsai algorithm for generating mappings tailored to limited hardware connectivity. Applied to Heavy-Hexagon layouts, it achieves favourable Pauli weight scaling of $O(√N)$ and eliminates the necessity for SWAP gates in single excitation operations. Building on this, we present treespilation [2] for optimizing mappings based on the Fermionic representation of the state we want to implement on the quantum computer and the desired transpilation scheme. We demonstrate it by reducing CNOT gate counts needed for simulating chemical ground states found with ADAPT-VQE, achieving significant reductions, up to 74%, on fully connected systems. We observe similar reductions on devices with limited qubit connectivity like IBM Eagle chips, with CNOT counts in certain instances surpassing those initially achieved with fully connected devices. Broadly speaking, these results show that the circuit gains from optimizing the problem—in this case, a Fermionic problem—with the transpilation scheme in mind. 
-<br/>
-[1] A. Miller, Z. Zimbor ́as, S. Knecht, S. Maniscalco, and G. Garc ́ıa-P ́erez, “Bonsai algorithm: Grow your own fermion-to-qubit mappings,” PRX Quantum, vol. 4, p. 030314, 2023. <br/>
-[2] A. Miller, A. Glos, and Z. Zimbor ́as, “Treespilation: Architecture- and State-Optimised Fermion-to-Qubit Mappings,” Mar. 2024. arXiv:2403.03992 [quant-ph].<br/> 
-[3] P. Jordan and E. Wigner, “ ̈Uber das Paulische ̈Aquivalenzverbot,” Zeitschrift f ̈ur Physik, vol. 47, no. 9, pp. 631–651, 1928. <br/>
-[4] M. Fellner, K. Ender, R. ter Hoeven, and W. Lechner, “Parity quantum optimization: Benchmarks,” Quantum, vol. 7, p. 952, 2023. <br/>
-[5] S. B. Bravyi and A. Y. Kitaev, “Fermionic quantum computation,” Annals of Physics, vol. 298, no. 1, pp. 210–226, 2002.  <br/>
-[6] A. Vlasov, “Clifford algebras, spin groups and qubit trees,” Quanta, vol. 11, no. 1, pp. 97–114, 2022. <br/>
-[7] Z. Jiang, A. Kalev, W. Mruczkiewicz, and H. Neven, “Optimal fermion-to-qubit mapping via ternary trees with applications to reduced quantum states learning,” Quantum, vol. 4, p. 276, 2020.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_11.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    Quantum computing promises to solve previously intractable
+problems, with neutral atoms emerging as a promising
+technology. Zoned neutral atom architectures enable immense
+parallelism and higher coherence times by shielding idling
+atoms from laser interference. However, effective quantum
+computation also requires advanced software, particularly
+compilers that optimize algorithm execution for the
+hardware. In this context, the interplay between placement
+and routing is crucial, as sub-optimal placements can cause
+unnecessary serialization of atom rearrangements. Existing
+compilers treat placement and routing independently,
+focusing only on travel distances. This work presents
+routing-aware placement, which proactively considers
+routing constraints to minimize both rearrangement steps
+and travel distances. Leveraging the A* algorithm, our
+approach reduces rearrangement time by 17% on average and
+up to 49% compared to the state-of-the-art. The complete
+code is available open-source as part of the Munich Quantum
+Toolkit (MQT) at <a href="https://github.com/cda-tum/mqt-qmap">https://github.com/cda-tum/mqt-qmap</a>.
   </div>
 </div>
-<br/>
-<br/>
+
 <!-- record starts -->
-<!--- Can't come 
 <div class="article">
   <a link="IWQC_paper_4">
   <span class="authors">
-    Ben Zindorf and Sougato Bose
+    Maxime Remaud and Vivien Vandaele
   </span><br/>
   <span class="title">
-    Efficient Implementation of Multi-Controlled Quantum Gates
+    Ancilla-free Quantum Adder with Sublinear Depth
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    We present an implementation of multi-controlled quantum gates which provides significant reductions of cost compared to state-of-the-art methods. The operator applied on the target qubit is a unitary, special unitary, or the Pauli X operator (Multi-Controlled Toffoli). The required number of ancilla qubits is no larger than one, similarly to known linear cost decompositions. We extend our methods for any number of target qubits, and provide further cost reductions if additional ancilla qubits are available. For each type of multi-controlled gate, we provide implementations for unrestricted (all-to-all) connectivity and for linear-nearest-neighbor. All of the methods use a linear cost of gates from the Clifford+T (fault-tolerant) set. In the context of linear-nearest-neighbor architecture, the cost and depth of our circuits scale linearly irrespective of the position of the qubits on which the gate is applied. Our methods directly improve the compilation process of many quantum algorithms, providing optimized circuits, which will result in a large reduction of errors.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_4.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] 
+    We present the first exact quantum adder with sublinear
+depth and no ancilla qubits. Our construction is based on
+classical reversible logic only and employs low-depth
+implementations for the CNOT ladder operator and the
+Toffoli ladder operator, two key components to perform
+    ripple-carry addition.
+Namely, we demonstrate that any ladder of n CNOT gates can
+be replaced by a CNOT-circuit with O (log n) depth, while
+maintaining a linear number of gates.We then generalize
+this construction to Toffoli gates and demonstrate that any
+ladder of n Toffoli gates can be substituted with a circuit
+with O(log2 n) depth while utilizing a linearithmic number
+of gates. This builds on the recent works of Nie et al.
+and Khattar and Gidney on the technique of
+conditionally clean ancillae. By combining these two key
+elements, we present a novel approach to design quantum
+adders that can perform the addition of two n-bit numbers
+in depth O(log2 n) without the use of any ancilla and using
+classical reversible logic only (Toffoli, CNOT and X gates).
   </div>
 </div>
---> 
-<br/>
-<br/>
+
 <!-- record starts -->
 <div class="article">
-  <a link="IWQC_paper_20">
+  <a link="IWQC_paper_5">
   <span class="authors">
-    Dohun Kim, Minyoung Kim, Sarah Meng Li and Michele Mosca
+    Theodore Yoder, Eddie Schoute, Patrick Rall, Emily
+Pritchett, Jay Gambetta, Andrew Cross, Malcolm Carroll and
+Michael Beverland
   </span><br/>
   <span class="title">
-    Improving the Fidelity of CNOT Circuits on NISQ Hardware
+    Tour de gross: A modular quantum computer based on
+bivariate bicycle codes
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    We introduce an improved CNOT synthesis algorithm that considers nearest-neighbour interactions and CNOT gate error rates in noisy intermediate-scale quantum (NISQ) hardware. Compared to IBM’s Qiskit compiler, it improves the fidelity of a synthesized CNOT circuit by about 2 times on average (up to 9 times). It lowers the synthesized CNOT count by a factor of 13 on average (up to a factor of 162). <br/>
-
-Our contribution is twofold. First, we define a Cost function by approximating the average gate fidelity Favg. According to the simulation results, Cost fits the error probability of a noisy CNOT circuit, Prob = 1−Favg, much tighter than the commonly used cost functions. On IBM’s fake Nairobi backend, it matches Prob to within 10^{−3}. On other backends, it fits Prob to within 10^{−1}. Cost accurately quantifies the dynamic error characteristics and shows remarkable scalability. Second, we propose a noise-aware CNOT routing algorithm, NAPermRowCol, by adapting the leading Steiner-tree-based connectivity-aware CNOT synthesis algorithms. A weighted edge is used to encode a CNOT gate error rate and Cost-instructed heuristics are applied to each reduction step. NAPermRowCol does not use ancillary qubits and is not restricted to certain initial qubit maps. Compared with algorithms that are noise-agnostic, it improves the fidelity of a synthesized CNOT circuit across varied NISQ hardware. Depending on the benchmark circuit and the IBM backend selected, it lowers the synthesized CNOT count up to 56.95% compared to ROWCOL, and up to 21.62% compared to PermRowCol. It reduces the synthesis Cost up to 25.71% compared to ROWCOL, and up to 9.12% compared to PermRowCol. Our method can be extended to route a more general quantum circuit, giving a powerful new tool for compiling on NISQ devices.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_20.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    We present the bicycle architecture, a modular quantum
+computing framework based on high-rate, low-overhead
+quantum LDPC codes identified in prior work. For two
+specific bivariate bicycle codes with distances 12 and 18,
+we construct explicit fault-tolerant logical instruction
+sets and estimate the logical error rate of each
+instruction under circuit noise. We develop a compilation
+strategy adapted to the constraints of the bicycle
+architecture, enabling large-scale universal quantum
+circuit execution. Integrating these components, we perform
+end-to-end resource estimates demonstrating that an order
+of magnitude larger logical circuits can be implemented
+with a given number of physical qubits on a bicycle
+architecture than on surface code architectures. We
+anticipate further improvements through advances in code
+constructions, circuit designs, and compilation techniques.
   </div>
 </div>
-<br/>
-<br/>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_6">
+  <span class="authors">
+    Yusei Mori, Hideaki Hakoshima and Keisuke Fujii
+  </span><br/>
+  <span class="title">
+    Multi-product commutation relation for transpiling
+Clifford+T circuits
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Quantum compilers that reduce the number of T-gates are
+essential for minimizing the overhead of fault-tolerant
+quantum computation. To achieve effective T-gate reduction,
+it is necessary to identify equivalent circuit
+transformation rules that are not yet utilized in existing
+tools. In this study, we investigate the rotation axes of
+multi-Pauli rotation gates and introduce a nontrivial
+equivalent transformation rule, the multi-product
+commutation relation (MCR). This rule constructs gate
+sequences based on specific commutation properties among
+multi-Pauli operators, yielding seemingly non-commutative
+instances that can actually be commuted. To evaluate
+whether existing compilers account for this commutation
+rule, we create a benchmark circuit dataset using a quantum
+circuit unoptimization. This technique intentionally adds
+redundancy to the circuit while keeping its equivalence. By
+leveraging the known structure of the original circuit
+before unoptimization, this method enables a quantitative
+evaluation of compiler performance by measuring how closely
+the optimized circuit matches the original circuit. Our
+numerical experiments reveal that the transformation rule
+based on MCR is not yet incorporated into current
+compilers. This finding suggests an untapped potential for
+further T-gate reduction by integrating MCR-aware
+transformations, paving the way for improvements in quantum
+compilers.
+  </div>
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_8">
+  <span class="authors">
+    Will Simmons, Mark Koch and Silas Dilkes
+  </span><br/>
+  <span class="title">
+    Data-Flow Analysis of Stabilizers for Quantum Programs
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Commuting gates or blocks of gates imply there are multiple
+places across a quantum circuit where the application of a
+particular gate would have the same effect. This is central
+to circuit optimisation passes that merge similar rotation
+gates (a.k.a. phase folding), or restructure the circuit
+into regions that are more amenable to resynthesis methods
+(such as collecting large regions of commuting rotations
+for synthesis by mutual diagonalisation or for the purpose
+of T-gate optimisation). Even more opportunities for these
+optimisations occur if we can safely move gates between
+control-flow blocks in a quantum program.
+    <br><br>
+Recent work by Amy and Lunderville rephrased the analysis
+for phase folding as a relational data-flow analysis,
+making it easier to reuse existing infrastructure from
+classical tools or integrate with other techniques for
+compiling classical programs. We propose a way to modify
+this method to track stabilizers as relations which are
+asymptotically efficient to work with and admit simple
+proofs of (relative) completeness for phase folding.
+Additionally, the new data-flow values completely capture
+the semantics of a basic block which can be resynthesised
+directly, where some of the stabilizers identified by the
+analysis present more degrees of freedom for optimisation
+during resynthesis.
+  </div>
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_11">
+  <span class="authors">
+    Mark Koch and Will Simmons
+  </span><br/>
+  <span class="title">
+    T Gate Hoisting in Dynamic Circuits
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Dynamic quantum circuits allow mid-circuit measurements
+whose outcomes influence the subsequent circuit execution
+via classical control-flow. We propose a compiler pass that
+reduces the T-count of such dynamic circuits by detecting
+opportunities for linear phase polynomials to be hoisted
+out of control-flow structures. For example, in some
+situtions, T gates may be moved out of loops and replaced
+with a classical phase accumulator.
+    <br><br>
+Our pass works across arbitrary structured and nested
+control-flow and scales to arbitrary branching depths.
+Apart from the hoisting itself, it fully maintains the
+program structure and performs no code duplication or
+unrolling. We framing the problem of detecting hoisting
+opportunities in terms of a phase folding analysis and
+build on top of the PF domain recently proposed by Amy and
+Lunderville for folding phases via data-flow analysis. We
+provide a prototype implementation, and a production grade
+implementation in the tket compiler is underway.
+  </div>
+</div>
+
 <!-- record starts -->
 <div class="article">
   <a link="IWQC_paper_12">
   <span class="authors">
-    Emmanuel Hainry, Romain Péchoux and Mário Silva
+    David Wierichs, Maxwell West, Roy Forestano, Marco Cerezo
+and Nathan Killoran
   </span><br/>
   <span class="title">
-    Branch Sequentialization in Quantum Polytime
+    Recursive Cartan decompositions for unitary synthesis
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    Quantum computation leverages the use of quantumly-controlled conditionals in order to achieve computational advantage. However, since the different branches in the conditional may operate on the same qubits, a typical approach to compilation involves performing the branches sequentially, which can easily lead to an exponential blowup of the program complexity. We introduce and study a compilation technique for avoiding branch sequentialization in a language that is sound and complete for quantum polynomial time, improving on previously existing polynomial-size bounds and showing the existence of techniques that preserve the intuitive complexity of the program.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_12.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    Recursive Cartan decompositions (CDs) provide a way to
+exactly factorize quantum circuits into smaller components,
+making them a central tool for unitary synthesis. Here we
+present a detailed overview of recursive CDs, elucidating
+their mathematical structure, demonstrating their
+algorithmic utility, and implementing them numerically at
+large scales. We adapt, extend, and unify existing
+mathematical frameworks for recursive CDs, allowing us to
+gain new insights and streamline the construction of new
+circuit decompositions. Based on this, we show that several
+leading synthesis techniques from the literature—the
+Quantum Shannon, Block-ZXZ, and Khaneja-Glaser
+decompositions—implement the same recursive CD. We also
+present new recursive CDs based on the orthogonal and
+symplectic groups, and derive parameter-optimal
+decompositions. Furthermore, we aggregate numerical tools
+for CDs from the literature, put them into a common
+context, and complete them to allow for numerical
+implementations of all possible classical CDs in canonical
+form. As an application, we efficiently compile
+fast-forwardable Hamiltonian time evolution to fixed-depth
+circuits, compiling the transverse-field XY model on a
+thousand qubits into 2 million gates in 22 seconds on a
+laptop.
   </div>
 </div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_25">
-  <span class="authors">
-    John van de Wetering and Matthew Amy
-  </span><br/>
-  <span class="title">
-    Optimising quantum circuits is generally hard
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    In order for quantum computations to be done as efficiently as possible it is important to optimise the number of gates used in the underlying quantum circuits as much as possible. In this paper we find that many gate optimisation problems for approximately universal quantum circuits are NP-hard. In particular, we show that optimising the T-count or T-depth in Clifford+T circuits, which are important metrics for the computational cost of executing fault-tolerant quantum computations, is NP-hard by reducing to Boolean satisfiability. With a similar argument we show that optimising the number of CNOT gates or Hadamard gates in a Clifford+T circuit is also NP-hard. Again varying the same argument we also establish the hardness of optimising the number of Toffoli gates in a reversible classical circuit. We find an upper bound to T-count and Toffoli-count of NP^NQP. Finally, we also show that for any non-Clifford gate $G$, doing approximate optimisation of the $G$-count over the Clifford+$G$ gate set, where we only have to match the target unitary within some small distance in the operator norm, is NP-hard.
 
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_25.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_24">
-  <span class="authors">
-    John van de Wetering, Richie Yeung, Tuomas Laakkonen and Aleks Kissinger
-  </span><br/>
-  <span class="title">
-    Optimal compilation of parametrised quantum circuits
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    Parametrised quantum circuits contain phase gates whose phase is determined by a classical algorithm prior to running the circuit on a quantum device. Such circuits are used in variational algorithms like QAOA and VQE. In order for these algorithms to be as efficient as possible it is important that we use the fewest number of parameters. We show that, while the general problem of minimising the number of parameters is NP-hard, when we restrict to circuits that are Clifford apart from parametrised phase gates and where each parameter is used just once, we can efficiently find the optimal parameter count. We show that when parameter transformations are required to be sufficiently well-behaved that the only rewrites that reduce parameters correspond to simple 'fusions'. Using this we find that a previous circuit optimisation strategy by some of the authors [Kissinger, van de Wetering. PRA (2019)] finds the optimal number of parameters.
-    <br/>
-Our proof uses the ZX-calculus. We also prove that the standard rewrite rules of the ZX-calculus suffice to prove any equality between parametrised Clifford circuits.
-
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_24.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_45">
-  <span class="authors">
-    Julian Teske and André Carvalho
-  </span><br/>
-  <span class="title">
-    Machine learning models for layout selection and extension of the native gate set with an efficient calibration and compilation
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    In this talk, we discuss two central concepts in any quantum compilation pipeline - layout selection and gate set. 
-<br/>
-In the first part, we introduce and experimentally test a machine-learning-based method for ranking logically equivalent quantum circuits (layouts) based on expected performance estimates derived from a training procedure conducted on real hardware. We apply our method to the problem of layout selection, in which abstracted qubits are assigned to physical qubits on a given device. We introduce a circuit score used for ranking that is parameterized in terms of a physics-based, phenomenological error model whose parameters are fit by training a ranking-loss function over a measured dataset. The dataset consists of quantum circuits exhibiting a diversity of structures and executed on IBM hardware, allowing the model to incorporate the contextual nature of real device noise and errors without the need to perform an exponentially costly tomographic protocol. We perform model training and execution on the 16-qubit ibmq_guadalupe device and compare our method to two common approaches: random layout selection and a publicly available baseline called Mapomatic. Our model consistently outperforms both approaches, predicting layouts that exhibit lower noise and higher performance. 
-<br/>
-In the second part, we discuss the notion of “universal gate set”. 
-A minimal universal gate set is unlikely to produce the most efficient compilation one can achieve given the qubits’ interactions supported by the hardware. 
-Most QC modalities provide a diverse variety of native multi-qubit interactions depending on the device architecture and gate-drive scheme. The calibration of high fidelity parameterized gates and the construction of an efficient circuit compilation scheme that leverages the richer gate set are open problems. Here, we present an efficient method for optimizing a selected set of system-wide entangling gates. These gates can be dynamically used online to create short-duration, high-fidelity parametric gates with arbitrary angles, all while demanding minimal calibration resources. To ensure the optimal incorporation of these gates in algorithms, we built a specialized compilation procedure that automatically finds and replaces optimizable patterns in quantum circuits. We show that in under 90 seconds we were able to calibrate a new gate (outside of the original gate set) between all the edges of a 127-qubit device. We then show that these new gate definitions, together with the existing gate set can be used by our specialized compilation procedure to yield a consistent algorithmic performance enhancement across a large range of algorithms.
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_43">
-  <span class="authors">
-    Korbinian Staudacher, Ludwig Schmid, Wanja Sajko and Robert Wille
-  </span><br/>
-  <span class="title">
-    Towards a Cross-Compilation Strategy for Neutral Atoms Using Graph-like ZX-Diagrams
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    In this work-in-progress, we address the challenge of optimizing quantum circuit compilation for neutral atom-based quantum computers by proposing a novel cross-compilation scheme that integrates ZX-circuit extraction and hardware mapping processes. <br/>
-Leveraging ZX-calculus, our approach enables a more cohesive and informed decision-making process by allowing the extraction algorithm to generate multiple candidate circuits, which are then evaluated by the mapping algorithm. <br/>
-This iterative feedback loop ensures that the extraction paths are optimized according to the hardware's current configuration and physical parameters, potentially leading to improvements in compilation efficiency and hardware utilization. 
-We present the fundamental idea and illustrate and discuss potential compilation improvements. <br/>
-This work-in-progress lays the idea for novel ZX-based quantum circuit compilation and offers a blueprint for adapting the cross-compilation approach to other extraction and mapping algorithms and hardware platforms.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_43.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_18">
-  <span class="authors">
-    Kostia Chardonnet, Ugo Dal Lago, Naohiko Hoshino and Paolo Pistone
-  </span><br/>
-  <span class="title">
-    From Lambda Calculus to Quantum Circuits Through the Geometry of Interaction
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    In this work we consider the following question: given a program written in a higher-order quantum programming language like the quantum lambda-calculus, what is the underlying quantum circuit that the program actually computes? To this end we introduce a new compilation procedure for the linear fragment of the quantum lambda calculus onto the quantum circuit model QASM2. Our protocol is based on Girard's Geometry of Interaction, and provides a method to eliminate both higher-order functions and classical control flow, thus transforming a structured functional program into a standard quantum circuit. Beyond presenting our compilation procedure, we establish its soundness: the execution of the produced quantum circuit correctly reflects that of the original program.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_18.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
 <!-- record starts -->
 <div class="article">
   <a link="IWQC_paper_14">
   <span class="authors">
-    Mark Koch, Agustín Borgna, Seyon Sivarajah, Alan Lawrence, Alec Edgington, Douglas Wilson, Craig Roy, Luca Mondada, Lukas Heidemann and Ross Duncan
+    Marcin Szyniszewski, Paul Skrzypczyk, Noah Linden and Aleks
+Kissinger
   </span><br/>
   <span class="title">
-    HUGR: A Quantum-Classical Intermediate Representation
+    Approximate simulation of quantum circuits via
+mixed-channel phase squashing
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    We introduce the Hierarchical Unified Graph Representation (HUGR): a novel graph based intermediate representation for mixed quantum-classical programs. HUGR’s design features high expressivity and extensibility to capture the capabilities of near-term and forthcoming quantum computing devices, as well as new and evolving abstractions from novel quantum programming paradigms. The graph based structure is machine-friendly and supports powerful pattern matching based compilation techniques. Inspired by MLIR, HUGR’s extensibility further allows compilation tooling to reason about programs at multiple levels of abstraction, lowering smoothly between them. Safety guarantees in the structure including strict, static typing and linear quantum types allow rapid development of compilation tooling without fear of program invalidation. A full specification of HUGR and reference implementation are open-source and available online.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_14.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    In the era of noisy intermediate-scale quantum (NISQ)
+devices, there is a constant need to optimize the gate
+count, circuit depth, and in general, execution time. In
+this work, we introduce mixed-channel phase squashing, a
+novel protocol for approximate quantum circuit simulation
+that extends prior techniques by allowing mixed quantum
+channels. Our protocol uses the ZX-calculus optimization
+techniques and a greedy strategy that selectively replaces
+small-angle Z-phase gates with stochastic mixtures of
+identity and different Z-phase gates, all under a strict
+error budget. We demonstrate that, while the approach
+yields modest two-qubit gate-count reduction in generic
+random quantum circuits, it achieves substantial reduction
+in structured circuits, such as the quantum Fourier
+transform. These results highlight the potential of
+mixed-channel approximations to enhance near-term quantum
+circuit performance, suggesting new directions for
+resource-aware quantum compilation beyond pure unitary
+channels.
   </div>
 </div>
-<br/>
-<br/>
+
 <!-- record starts -->
 <div class="article">
-  <a link="IWQC_paper_16">
+  <a link="IWQC_paper_15">
   <span class="authors">
-    Raphael Seidel
+    Vivien Vandaele, Simon Perdrix and Christophe Vuillot
   </span><br/>
   <span class="title">
-    Automatic quantum function parallelization and memory management in Qrisp
+    Optimal number of parametrized rotations and Hadamard gates
+in parametrized Clifford circuits with non-repeated
+parameters
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    Automated optimization of quantum programs has gathered significant attention amidst the recent advances of hardware manufacturers. In this work we introduce a novel data-structure for representing quantum programs called permeability DAG, which captures several useful properties of quantum programs across multiple levels of abstraction. Operating on this representation facilitates a variety of powerful transformations such as automatic parallelization, memory management and synthesis of uncomputation. More potential use-cases are listed in the outlook section. At the core, our representation abstracts away a class of non-trivial commutation relations, which stem from a feature called permeability. Both memory management and parallelization can be made sensitive to execution speed details of each particular quantum gate, implying our compilation methods are not only retargetable between NISQ/FT but even for individual device instances.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_16.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    We present an efficient algorithm to reduce the number of
+non-Clifford gates in quantum circuits and the number of
+parametrized rotations in parametrized quantum circuits.
+The method consists in finding rotations that can be merged
+into a single rotation gate. This approach has already been
+considered before and is used as a pre-processing procedure
+in many optimization algorithms, notably for optimizing the
+number of Hadamard gates or the number of T gates in
+Clifford+T circuits. Our algorithm has a better complexity
+than similar methods and is particularly efficient for
+circuits with a low number of internal Hadamard gates.
+Furthermore, we show that this approach is optimal for
+parametrized circuits composed of Clifford gates and
+parametrized rotations with non-repeated parameters. For
+the same type of parametrized quantum circuits, we also
+prove that a previous procedure optimizing the number of
+Hadamard gates and internal Hadamard gates is optimal. This
+procedure is notably used in our low-complexity algorithm
+for optimally reducing the number of parametrized rotations.
   </div>
 </div>
-<br/>
-<br/>
+
 <!-- record starts -->
 <div class="article">
-  <a link="IWQC_paper_7">
+  <a link="IWQC_paper_20">
   <span class="authors">
-    Remmy Zen, Jan Olle, Luis Colmenarez, Matteo Puviani, Markus Müller and Florian Marquardt
+    Brad Chase, Kean Chen and Gushi Li
   </span><br/>
   <span class="title">
-    Quantum Circuit Discovery for Fault-Tolerant Logical State Preparation with Reinforcement Learning
+    ucc-ft: Formal Verification for the Fault-Tolerant Compiler
+Stack
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    The realization of large-scale quantum computers requires not only quantum error correction (QEC) but also fault-tolerant operations to handle errors that propagate into harmful errors. Recently, flag-based protocols have been introduced that use ancillary qubits to flag harmful errors. However, there is no clear recipe for finding a fault-tolerant quantum circuit with flag-based protocols, especially when we consider hardware constraints, such as qubit connectivity and available gate set. In this work, we propose and explore reinforcement learning (RL) to automatically discover compact and hardware-adapted fault-tolerant quantum circuits. We show that in the task of fault-tolerant logical state preparation, RL discovers circuits with fewer gates and ancillary qubits than published results without and with hardware constraints of up to 15 physical qubits. Furthermore, RL allows for straightforward exploration of different qubit connectivities and the use of transfer learning to accelerate the discovery. More generally, our work opens the door towards the use of RL for the discovery of fault-tolerant quantum circuits for addressing tasks beyond state preparation, including magic state preparation, logical gate synthesis, or syndrome measurement.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_7.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_42">
-  <span class="authors">
-    Seiseki Akibue, Go Kato and Seiichiro Tani
-  </span><br/>
-  <span class="title">
-    Probabilistic unitary and state synthesis with optimal accuracy
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    A new circuit synthesis approach, called probabilistic synthesis, samples a gate sequence to suppress the approximate error for realizing a target unitary transformation or preparing a target pure state. When we consider the fault-tolerant circuit synthesis, the description of the approximation error caused by each gate sequence is completely known. By exploiting this description, several probabilistic synthesis algorithms have been developed to reduce the approximation error for specific types of target unitary transformations; however, their fundamental limitations were unknown. <br/>
-In our research, we have revealed the tight inequalities that govern the error reduction achieved by the optimal probabilistic synthesis for realizing any unitary transformations and preparing pure states. In contrast to the existing results, our result shows that the approximation error can be reduced not only quadratically, but also proportionally to $1/d$ for some target unitary transformations acting on $d$-dimensional Hilbert space. <br/>
-From a computational point of view, we have shown that an optimal probabilistic synthesis algorithm can be constructed based on a semidefinite program (SDP). We have also developed a technique to exponentially reduce the running time of the SDP by exploiting the spherical nature of unitary transformations and pure states. As a result, we have constructed efficient probabilistic synthesis algorithms for realizing arbitrary unitary transformations and preparing pure states, rigorously estimated their time complexity, and demonstrated their performance through numerical experiments.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_42.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    A critical property of any quantum error correcting code
+implementation is fault-tolerance (FT): the physical
+circuits that perform encoding, decoding, and logical
+operations must not introduce or propagate errors in a way
+that overwhelms the code's corrective capabilities.
+Verifying this property is notoriously difficult and
+error-prone to perform manually, especially for complex
+codes and compiled circuits. By incorporating the
+techniques of quantum symbolic execution, Chen et. al
+developed an automatic verification framework and tool for
+checking quantum fault-tolerance. The approach leverages
+symbolic execution and Satisfiability Modulo Theories (SMT)
+solvers to automatically prove whether a given circuit
+gadget is fault-tolerant for a specific QECC. We build on
+this foundation and introduce ucc-ft, an open-source tool
+that brings this verification technique into a practical,
+compiler-friendly ecosystem. It supports standard
+interfaces such as Python and OpenQASM 3, making advanced
+fault-tolerance verification accessible to both quantum
+researchers and compiler developers. In this submission, we
+provide an overview of the formal verification method,
+describe the architecture of ucc-ft, and demonstrate its
+utility in verifying an example circuit.
   </div>
 </div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_39">
-  <span class="authors">
-    Silas Dilkes and Yao Tang
-  </span><br/>
-  <span class="title">
-    A Greedy Search Algorithm for the Construction of Architecture-Aware Pauli-Exponential-Clifford Circuits
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    We present a method for compiling quantum circuits to fit the constrained connectivity graphs of quantum devices. Building on existing techniques for generating efficient circuits from a representation as Pauli-Exponential-Clifford circuits, our approach integrates Steiner trees into the cost function of a greedy search algorithm with look-ahead. We benchmark our method against TKET and Qiskit across various circuits and IBMQ connectivity graphs, showing a significant reduction in the number of two-qubit gates in many cases. Additionally, a Clifford synthesis sub-step achieves performance comparable to state-of-the-art asymptotic results.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_39.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
-<!-- record starts -->
-<div class="article">
-  <a link="IWQC_paper_22">
-  <span class="authors">
-    Tanuj Khattar and Craig Gidney
-  </span><br/>
-  <span class="title">
-    Rise of conditionally clean ancillae for optimizing quantum circuits
-  </span></br>
-  <div class="abstract">
-    <b>Abstract:</b>
-    We argue by example that conditionally clean ancillae, recently described by [NZS24], should become a standard tool in the quantum circuit design kit. We use conditionally clean ancillae to reduce the gate counts and depths of several circuit constructions. In particular, we present: <br/>
-(a) n-controlled NOT using 2n Toffolis and O(log n) depth given 2 clean ancillae. <br/>
-(b) n-qubit incrementer using 3n Toffolis given log*(n) clean ancillae. <br/>
-(c) n-qubit quantum-classical comparator using 3n Toffolis given log*(n) clean ancillae. <br/>
-(d) unary iteration over [0, N) using 2.5N Toffolis given 2 clean ancillae. <br/>
-(e) unary iteration via skew tree over [0, N) using 1.25 N Toffolis given n dirty ancillae. <br/>
-We also describe a technique for laddered toggle detection to replace clean ancillae with dirty ancillae in all our constructions with a 2x Toffoli overhead. Our constructions achieve the lowest gate counts to date with sublinear ancilla requirements and should be useful building blocks to optimize circuits in the low-qubit regime of Early Fault Tolerance.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_22.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
-  </div>
-</div>
-<br/>
-<br/>
+
 <!-- record starts -->
 <div class="article">
   <a link="IWQC_paper_21">
   <span class="authors">
-    Vivien Vandaele
+    Jordan Sullivan, Brad Chase, Nate Steman, Misty Wahl,
+Nathan Shammah and Will Zeng
   </span><br/>
   <span class="title">
-    Lower T-count with faster algorithms
+    Unitary Compiler Collection: A Community-Driven,
+Interoperable, Open-Source Quantum Compiler
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    Among the cost metrics characterizing a quantum circuit, the T-count stands out as one of the most crucial as its minimization is particularly important in various areas of quantum computation such as fault-tolerant quantum computing and quantum circuit simulation. In this work, we contribute to the T-count reduction problem by proposing efficient T-count optimizers with low execution times. In particular, we greatly improve the complexity of TODD, an algorithm currently providing the best T-count reduction on various quantum circuits. We also propose some modifications to the algorithm which are leading to a significantly lower number of T gates. In addition, we propose another algorithm which has an even lower complexity and that achieves a better or equal T-count than the state of the art on most quantum circuits evaluated. We also prove that the number of T gates in the circuit obtained after executing our algorithms on a Hadamard-free circuit composed of n qubits is upper bounded by n(n + 1)/2 + 1, which is the best known upper bound achievable in polynomial time. From this we derive an upper bound of (n + 1)(n + 2h)/2 + 1 for the number of T gates in a Clifford+T circuit where h is the number of internal Hadamard gates in the circuit, i.e. the number of Hadamard gates lying between the first and the last T gate of the circuit.
-  </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_21.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+    We introduce Unitary Compiler Collection (UCC), an
+open-source Python package for front-end-agnostic,
+high-performance compilation of quantum circuits. UCC's
+goal is to gather the best of open-source compilation to
+make quantum programming simpler, faster, and more
+scalable. As quantum hardware advances, so does the
+complexity of programming it: increasing qubit counts,
+diverse gate operations, and varied architectures all
+present new challenges for quantum compilation. Two major
+challenges that we see are (1) compiler improvements are
+often isolated in separate libraries or unmaintained
+repositories without integration into existing tools, and
+(2) there are high switching costs between quantum
+computing frameworks and hardware platforms for both
+compiler developers and users. To address these, Unitary
+Foundation has developed UCC with an architecture and
+contribution framework to foster collaboration and enable
+the most performant tools of quantum and classical
+compilation to work together.
   </div>
 </div>
-<br/>
-<br/>
+
 <!-- record starts -->
 <div class="article">
-  <a link="IWQC_paper_38">
+  <a link="IWQC_paper_22">
   <span class="authors">
-    Yannick Stade, Ludwig Schmid, Lukas Burgholzer and Robert Wille
+    Maxime Garnier, Thierry Martinez and Mateo Uldemolins
   </span><br/>
   <span class="title">
-    Compiler Development for Neutral Atom Quantum Computers
+    Graphix: An Open-Source Compiler and Simulator for
+Measurement-Based Quantum Computation
   </span></br>
   <div class="abstract">
     <b>Abstract:</b>
-    Neutral Atoms (NAs) are an emerging and promising platform for universal quantum computing characterized by high-fidelity, long-range qubit interactions, native multi-qubit gate support, and significant scalability. 
-Recent advancements demonstrate the dynamic rearrangement and shuttling of qubit arrays, enhancing arbitrary connectivity albeit with some time overhead. 
-While the hardware capabilities of NAs rapidly advance, there is a risk that software development lags behind, limiting the exploitation of these capabilities. 
-This work addresses this gap by focusing on two primary software objectives: improving existing quantum circuit mapping tasks and exploring novel solutions such as logical-level routing for fault-tolerant quantum computing. 
-We discuss compilation for hybrid architectures, combining SWAP gate insertion and shuttling-based atom rearrangements and zoned architectures, which divide the architecture into different computational zones to enhance gate parallelism. 
-We discuss the inherent challenges and present efficient algorithmic approaches for each method. 
-The complete code for the proposed solutions is publicly available as part of the Munich Quantum Toolkit (MQT).
+    This contribution presents Graphix, an open-source software
+library written in Python for measurement-quantum
+computation (MBQC).
+    <br><br>
+MBQC is an important computational model that has not been
+as thoroughly investigated as the circuit model which
+provides complementary insights and new handles on
+algorithm design. In this model, a quantum computation (a
+pattern) is executed by starting from an initial resource
+state and applying adaptive single-qubit measurements where
+adaptivity and Pauli corrections are required to compensate
+the randomness of quantum measurements.
+    <br><br>
+The Graphix library contains tools to transpile from
+quantum circuits, analyse graphical properties known as
+flow conditions, transpile to and from ZX diagrams,
+manipulate the patterns (standardisation, Pauli
+measurements presimulation) and to simulate patterns on our
+internal backends (statevector, density matrix and tensor
+network). Moreover, an expressive noise model interface has
+been implemented for the density matrix backend allowing
+the design of custom MBQC-native noise models.
+    <br><br>
+The talk will highlight the theoretical foundations of the
+software, its core features as well as the general
+direction for future developments. Emphasis will be put on
+the transpilation between the different languages related
+to MBQC (circuits, patterns, open graphs and ZX diagrams)
+and the ongoing efforts to develop applications
+(variational algorithms, verification of quantum
+computation) and to interface the library with QPU
+providers' SDKs and hardware.
   </div>
-  <div class="links">
-    [<a href="papers/IWQC2024_paper_38.pdf">Paper PDF</a>]
-    <!-- [<a href="slides/404_nofound.pdf">Slides</a>] -->
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_23">
+  <span class="authors">
+    Daniele Trisciani, Marco Cattaneo and Zoltán Zimborás
+  </span><br/>
+  <span class="title">
+    Decomposition of multi-qutrit gates generated by
+Weyl-Heisenberg strings
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Decomposing unitary operations into native gates is an
+essential step for implementing quantum algorithms. For
+qubit-based devices, where native gates are typically
+single- and two-qubit operations, a range of decomposition
+techniques have been developed. In particular, efficient
+algorithms exist for decomposing exponentials of Pauli
+strings while taking hardware topology in account.
+Motivated by the growing interest in qutrit-based quantum
+computing, we develop analogous decomposition methods for
+qutrit systems. Specifically, we introduce an algorithm
+that decomposes the exponential of an arbitrary tensor
+product of Weyl-Heisenberg operators (plus their Hermitian
+conjugation) into single- and two-qutrit gates. We further
+extend this approach to unitaries generated by Gell-Mann
+string (i.e., a tensor product of Gell-Mann matrices).
+Since both Gell-Mann matrices and Weyl-Heisenberg operators
+form (together with identity) complete operator bases of
+qutrit operators, we can use this result also to decompose
+any multi-qutrit gate that is diagonal up to single-qutrit
+    rotations.
+        <br><br>
+As a practical application, we use our method to decompose
+the layers of the quantum approximate optimization
+algorithm for qutrit-based implementations of the graph
+k-coloring problem.
+For values of k well-suited to qutrit architectures (e.g.,
+k=3 or in general k=3^n), our approach yields significantly
+shallower circuits compared to qubit-based implementations,
+an advantage that grows with problem size, while also
+requiring a smaller total Hilbert space dimension.
+Finally, we also address the routing challenge in qutrit
+architectures that arises due to the limited connectivity
+of the devices. In particular, we generalize the
+Steiner-Gauss method, originally developed to reduce CNOT
+counts in qubit circuit, to optimize gate routing in
+qutrit-based systems.
+  </div>
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_24">
+  <span class="authors">
+    Erik Weilandt, Tom Peham and Robert Wille
+  </span><br/>
+  <span class="title">
+    Synthesis of Fault-tolerant State Preparation Circuits
+using Steane-type Error Detection
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Fault-tolerant state preparation is essential for reliable
+quantum error correction, particularly in Steane-type error
+correction, which relies on robust ancilla states for
+syndrome readout. One way of fault-tolerant state
+preparation is to initialize multiple ancilla states and
+check them against each other to detect problematic errors.
+In the worst case, the number of states required for a
+successful initialization grows polynomially with respect
+to the distance of the code, but it has been shown that
+this can be reduced to constant ancilla overhead—in the
+best case, only four states are required. However, existing
+techniques are limited to codes with large symmetric groups
+like the Golay code. In this work, we propose a general,
+automated synthesis methodology for Steane-type
+fault-tolerant state preparation circuit synthesis that
+applies to arbitrary Calderbank-Shor-Steane (CSS) codes and
+does not rely on symmetries in the code. We apply the
+proposed methods to various CSS d = 5 and d = 7 codes and
+demonstrate successful fault-tolerant initialization of
+logical basis states under circuit-level depolarizing
+noise. The circuits synthesized using the proposed
+methodology provide an important step towards experimental
+realizations of high-fidelity ancilla states for near-term
+demonstration of fault-tolerant quantum computation.
+  </div>
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_25">
+  <span class="authors">
+    Tanuj Khattar, Noah Shutty, Craig Gidney, Dmitri Maslov,
+Ryan Babbush and Stephen P Jordan
+  </span><br/>
+  <span class="title">
+    Efficient quantum circuits for solving classically
+intractable optimization problems using Decoded Quantum
+Interferometry
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    Decoded Quantum Interferometry (DQI) is a quantum algorithm
+for reducing classical optimization problems to classical
+decoding problems by exploiting structure in the Fourier
+spectrum of the objective function. When applied to the
+Optimal Polynomial Intersection (OPI) problem, this
+framework requires the decoding of Reed-Solomon codes. The
+most computationally dominant part of the algorithm is
+running a classical decoding algorithm as a reversible
+quantum circuit, which is the main focus of our work.
+    <br><br>
+This work provides the first end-to-end resource estimates
+for solving classically intractable instances of the OPI
+problem using DQI. We introduce significant compilation
+improvements, including adapting the problem to binary
+extension fields to leverage optimized arithmetic and
+developing a new, qubit-efficient compilation for the
+Extended Euclidean Algorithm (EEA), which we belive will be
+useful in cryptographic applications beyond DQI.
+    <br><br>
+Our analysis shows that an OPI instance, estimated to
+require over 10²³ classical trials, can be solved with
+approximately 1600 logical qubits and 33 million Toffoli
+gates. These results provide a concrete roadmap and a
+realistic assessment of the resources required to achieve
+quantum advantage on a structured optimization problem.
+  </div>
+</div>
+
+<!-- record starts -->
+<div class="article">
+  <a link="IWQC_paper_28">
+  <span class="authors">
+    Simon Martiel and Ali Javadi-Abhari
+  </span><br/>
+  <span class="title">
+    Compiling low-overhead circuits for error detection
+  </span></br>
+  <div class="abstract">
+    <b>Abstract:</b>
+    We introduce a low-overhead approach for detecting errors
+in arbitrary Clifford circuits on arbitrary qubit
+connectivities. Our method is based on the framework of
+spacetime codes, and is particularly suited to near-term
+hardware since it has a much milder overhead in qubits and
+gates compared to error correction, while achieving a
+better sampling overhead than existing error mitigation
+methods. We present efficient algorithms for finding valid
+checks that are simultaneously low weight, satisfy
+connectivity constraints, and cover large detecting regions
+within the circuit. Using this approach, we experimentally
+demonstrate error detection on circuits of up to 50 logical
+qubits containing 2450 CZ gates, and show physical to
+logical fidelity gains of up to 236×. Furthermore, we show
+our algorithm can efficiently find checks in universal
+circuits, but the space of valid checks diminishes
+exponentially with the non-Cliffordness of the circuit.
+These theoretical and experimental results suggest that
+Clifford-dominated circuits are promising candidates for
+near-term quantum advantage.
   </div>
 </div>
 
@@ -412,22 +644,34 @@ The complete code for the proposed solutions is publicly available as part of th
 
 <H3>Sponsors</H3>
 
-<a href="https://www.ibm.com/quantum">
+<H3>Sponsors</H3>
+<a href="https://instituteq.fi/"> <img height="70" src="logo_instituteq.png" /></a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.quantinuum.com">
+  <img height="50" src="logo_quantinuum.png" /></a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="https://alice-bob.com/">
+  <img height="50" src="logo_aliceandbob.png" /></a>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://unitary.foundation">
+  <img height="50" src="logo_unitaryfoundation.png" /></a>
+
+
+
+<!--<a href="https://www.ibm.com/quantum">
   <img height="50" src="banners/IBM_Quantum_logotype_pos_RGB.png" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="https://www.quandela.com">
   <img height="50" src="banners/quandela_logo.png" /></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<br>
-<a href="https://www.quantinuum.com">
-  <img src="banners/quantinuum_logo.png" /></a>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.aqt.eu/">
-  <img height="50" src="banners/Logo-AQT.png" /></a>
+<br>-->
+
 
 <H3>Previous Editions</H3>
 
 <ul>
+  <li>2024 <a href="https://quantum-compilers.github.io/iwqc2024/">6th International Workshop on
+    Quantum Compilation</a>, Berlin, Germany, 11-12 September 2024</li>
   <li>2023 <a href="https://quantum-compilers.github.io/iwqc2023/">5th International Workshop on
     Quantum Compilation</a>, Paris, France, 22-23 July 2023</li>  
   <li>2020 <a href="https://quantumweek2020.cambridgequantum.com/iwqc20.html">4th International Workshop on
